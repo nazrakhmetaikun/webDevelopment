@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project: Recipe book</title>
+        <meta charset="utf-8">
+        <style>
+        h1{
+            background-color:rgb(200,120,210);
+        }
+        .steps{
+            background-color:rgb(20,120,210);
+
+        }
+        .title{
+            background-color:rgb(10,240,210);
+
+        }
+        </style>
+    </head>
+    <body>
+       
+        <h1>Aikun's Recipe Book</h1>
+        
+        <h2>Contents:</h2>
+        
+        <ol>
+            <li><a href="#pasta">Pasta with chicken</a></li>
+            <li><a href="#soup">Soup with vegetables</a></li>
+            <li><a href="#potatoes">Fried potatoes</a></li>
+
+        </ol>
+        
+        <h2 id="pasta" class="title">Pasta with chicken</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/The_Only_Original_Alfredo_Sauce_with_Butter_and_Parmesano-Reggiano_Cheese.png" width="300">
+        
+        <ul>
+            <li>Time:40 min</li>
+            <li>Serves: 2</li>
+        </ul>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredients</th>
+                    <th>Quantity</th>
+                </tr>
+                <tr>
+                    <td>Chicken</td>
+                    <td>300 g</td>
+                </tr>
+                <tr>
+                    <td>Pasta</td>
+                    <td>200 g</td>
+                </tr>
+                <tr>
+                    <td>Salt</td>
+                    <td>as you want</td>
+                </tr>
+                <tr>
+                    <td>Sour cream</td>
+                    <td>100 g</td>
+                </tr>
+                <tr>
+                    <td>Cheese</td>
+                    <td>200 g</td>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        
+        <p class="steps"><strong>Steps</strong> Boil some chicken, once it is ready add salt and spices.<br> Then fry it for 10 mins.<br> Afterwards, add some water and add spaghetti.<br>
+        Add sour cream and cheese<br>
+        <strong>Enjoy!</strong>
+</p>
+        <h2 id="soup" class="title">Soup with vegetables</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Hungarian_goulash_soup.jpg/1200px-Hungarian_goulash_soup.jpg" width="300">
+        <ul>
+            <li>Time: 1 hour</li>
+            <li>Serves: 2</li>
+        </ul>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredients</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Beef</td>
+                    <td>500g</td>
+                </tr>
+                <tr>
+                    <td>Potatoes</td>
+                    <td>150g</td>
+                </tr>
+                <tr>
+                    <td>Onion</td>
+                    <td>100g</td>
+                </tr>
+                <tr>
+                    <td>Tomatoes</td>
+                    <td>100 g</td>
+                </tr>
+                <tr>
+                    <td>Salt and spices</td>
+                    <td>as you want</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p class="steps"><strong>Steps</strong> <br>
+        Boil some meat for 40 mins.<br>
+        Add salt and spices <em>make sure your meat is well-prepared.</em><br>
+        Add all vegetables and boil for 20 mins.<br>
+        <strong>Enjoy!</strong>
+</p>  
+        <h2 id="potatoes" class="title">Fried potatoes</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Fries_2.jpg/1200px-Fries_2.jpg" width="300">
+        <ul>
+            <li>Time:15 mins</li>
+            <li>Serves: 2</li>
+        </ul>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredients</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Oil</td>
+                    <td>50g</td>
+                </tr>
+                <tr>
+                    <td>Potatoes</td>
+                    <td>150g</td>
+                </tr>
+                <tr>
+                    <td>Salt and spices</td>
+                    <td>as you want</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p class="steps"><strong>Steps</strong> <br>
+        Put some oil on your frying pan.<br>
+        Cut potatoes into thin slices.<br>
+        Fry your potatoes for 10 mins<br>
+        Add salt and spices at the end<br>
+        <strong>Enjoy!</strong>
+</p>  
+    <p><em>Source: <a href="https://www.allrecipes.com/">Allrecipes.com</a></em></p>
+    
+    </body>
+</html>
