@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .header {
+      background-color:beige;
+      padding: 30px 40px;
+      color:Black;
+      text-align: center;
+      font-size: 30px;
+      }
+      ul li {
+      position: relative;
+      padding: 12px 8px 12px 40px;
+      background-color: antiquewhite;
+      font-size: 18px;
+      transition: 0.9s;
+      }
+      ul li.checked {
+      background: rgb(143, 82, 82);
+      color: #fff;
+      }
+      ul li.checked::before {
+      content: '';
+      position: absolute;
+      border-color: rgb(43, 26, 26);
+      border-style: solid;
+      border-width: 0 2px 2px 0;
+      top: 10px;
+      left: 16px;
+      transform: rotate(45deg);
+      height: 15px;
+      width: 7px;
+      }
+      .x {
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 12px 16px 12px 16px;
+      }
+      .x:hover {
+      background-color: #f44336;
+      color: white;
+      }
+      input {
+      margin: 0;
+      border-radius: 0;
+      width: 70%;
+      padding: 10px;
+      float: left;
+      font-size: 20px;
+      text-align: center;
+      border-radius: 7px;
+      }
+      .button {
+      padding: 10px;
+      width: 26%;
+      height:27.5px;
+      background:crimson;
+      color:white;
+      float: right;
+      text-align: center;
+      font-size: 20px;
+      cursor: pointer;
+      transition: 0.5s;
+      border-radius: 7px;
+      }
+
+      .button:hover {
+      background-color: hotpink;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="myDIV" class="header">
+    <h2>My To Do List</h2>
+    <input type="text" id="myInput" placeholder="Type in your events for today...">
+    <span onclick="add()" class="button">Add</span>
+    </div>
+
+    <ul id="myTable">
+    <li>Помыть посуду</li>
+    <li class="checked">Убраться дома</li>
+    <li>Покормить собак</li>
+    <li>Приготовить кушать</li>
+    </ul>
+
+    <script>
+      function addCross(){
+        var myElements = document.getElementsByTagName("li");
+        for (var i = 0; i < myElements.length; i++) {
+          var span = document.createElement("span");
+          var txt = document.createTextNode("\u00D7");
+          span.className = "x";
+          span.appendChild(txt);
+          myElements[i].appendChild(span);
+      }}
+      addCross();
+
+      function cross(){
+        var x = document.getElementsByClassName("x");
+        for (var i = 0; i < x.length; i++) {
+        x[i].onclick = function() {
+          var div = this.parentElement;
+          div.style.display = "none";}}
+      }
+      cross();
+
+
+      var list = document.querySelector('ul');
+      list.addEventListener('click', function(v) {
+      if (v.target.tagName === 'LI') {
+        v.target.classList.toggle('checked');
+      }
+      }, false);
+
+      function add() {
+        var li = document.createElement("li");
+        var inputByUser = document.getElementById("myInput").value;
+        var newEL = document.createTextNode(inputByUser);
+        li.appendChild(newEL);
+        if (inputByUser === '') {
+          alert("Empty event!");
+        } else {
+          document.getElementById("myTable").appendChild(li);
+      }
+      addCross();
+      cross();
+      }
+    </script>
+
+  </body>
+</html>
