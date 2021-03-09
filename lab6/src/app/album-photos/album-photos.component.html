@@ -1,0 +1,11 @@
+<h2>Photos</h2>
+<ul *ngIf="photos.length">
+  <li *ngFor="let photo of photos">
+    <div class="block">
+      <div class="title">
+        {{photo.id}}) {{photo.title}}
+      </div>
+      <img src="{{photo.url}}" alt="Photo">
+    </div>
+  </li>
+</ul>
